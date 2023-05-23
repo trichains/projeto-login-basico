@@ -14,7 +14,7 @@
 }
 
 body, html {
-  background-color: #19261b;
+  background: linear-gradient(to top, white,black);
   height: 100vh;
   width: 100vw;
 }
@@ -29,7 +29,6 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
 
   background-color: white;
@@ -38,15 +37,16 @@ main {
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
 
-  transition: width 0.3s, height 0.3s;
+  transform: translate(-50%, -50%);
+  transition: width .3s, height .3s;
   transition-timing-function: ease;
 }
 
 #imagem {
   display: block;
-  background: #5f2c82 url(../imagens/tela.jpg) no-repeat;
+  background: #000000 url(../imagens/tela.jpg) no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   height: 200px;
 }
 
@@ -64,11 +64,12 @@ main {
   font-size: 0.8em;
 }
 .campo {
-  background-color: #19261b;
+  background-color: black;
+  border: 2px solid black;
   display: block;
   width: 100%;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 5px 0px;
 }
 
@@ -76,8 +77,26 @@ form label {
   display: none;
 }
 
+.campo span {
+  color: white;
+  font-size: 1.9em;
+  width: 40px;
+  padding: 5px;
+}
+
+.campo input {
+  background-color: rgba(255, 255, 255, 0.986);
+  font-size: 1em;
+  width: calc(100% - 45px);
+  height: 100%;
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-10px);
+}
+
 input[type=submit] {
-  background-color: #49a09d;
+  background-color: #000000;
   color: white;
   border: none;
   border-radius: 5px;
@@ -85,11 +104,11 @@ input[type=submit] {
   font-size: 1em;
   width: 100%;
   height: 40px;
+  cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #214846;
-  cursor: pointer;
+  background-color: rgb(46, 46, 46);
 }
 
 .botao {
@@ -97,21 +116,21 @@ input[type=submit]:hover {
   text-align: center;
   font-size: 1em;
   padding-top: 5px;
-  margin-top: 7px;
+  margin-top: 5px;
   width: 100%;
   height: 40px;
   background-color: white;
-  color: #214846;
-  border: 1px solid #49a09d;
-  border-radius: 5px;
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 7px;
   text-decoration: none;
 }
 
 .botao:hover {
-  background-color: #49a09d;
+  background-color: lightgray;
 }
 
-.material-symbols-outlined {
+.botao span {
   font-size: 1em;
   position: relative;
   top: 5px;
