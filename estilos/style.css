@@ -62,6 +62,9 @@ main {
 
 #formulario p {
   font-size: 0.8em;
+  white-space: pre-line;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .campo {
   background-color: black;
